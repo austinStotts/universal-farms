@@ -1,0 +1,59 @@
+body {
+  margin: 0%;
+}
+
+.app-wrapper {
+  display: grid;
+  grid-template-columns: [main1] 5% [main2] 1fr [main3] 1fr [main4] 1fr [main5] 1fr [main6] 5% [main7];
+}
+
+.console-wrapper {
+  grid-column: main1 / main7;
+
+  display: grid;
+  grid-template-columns: [console1] 5% [console2] 1fr [console3] 1fr [console4] 5% [console5];
+
+  background-color: black;
+  height: 175px;
+}
+
+.console-message {
+  grid-column: console2 / console3;
+  color: white;
+}
+
+.stats-wrapper {
+  grid-column: main2 / main3;
+
+  margin: 20px 0px 0px 0px;
+}
+
+.stat-label {
+  font-size: 1.2em;
+  margin: 5px 0px 5px 0px
+}
+
+.stat-item {
+  font-size: 1em;
+}
+
+.controller-wrapper {
+  grid-column: main2 / main3;
+
+  margin-top: 20px;
+}
+
+.controller-plant-seed {
+  width: 125px;
+  height: 30px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 2px;
+  outline: none;
+  display: block;
+  margin: 5px 0px 5px 0px;
+}
+
+.controller-plant-seed:active {
+  border: 1px solid black;
+}
